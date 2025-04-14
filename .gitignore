@@ -8,6 +8,7 @@
 /docs
 /node_modules
 /.cursor
+**/@angular.mdc/**
 
 # Node
 /node_modules
