@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'leaflet/dist/leaflet.css';
+
+/* Custom styles for tooltips */
+.leaflet-tooltip {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 8px;
+}
+
+.leaflet-tooltip h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.leaflet-tooltip p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Custom styles for the map container */
+.map-container {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Material overrides */
+.mat-form-field {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.mat-select-panel {
+  background: rgba(255, 255, 255, 0.95);
+}

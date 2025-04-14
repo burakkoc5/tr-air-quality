@@ -1,0 +1,10 @@
+<div class="parameter-selector">
+  <button
+    *ngFor="let param of parameters"
+    [class.active]="param.value === selectedParameter"
+    (click)="onParameterChange(param.value)"
+    class="param-button"
+  >
+    {{ param.label }}
+  </button>
+</div> 

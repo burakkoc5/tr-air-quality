@@ -1,0 +1,18 @@
+<div class="legend">
+  <div class="legend-content">
+    <div class="legend-header">
+      <h4>{{ getLegendTitle() }}</h4>
+      <div class="legend-scale">
+        <div class="legend-items">
+          <div class="legend-item" *ngFor="let item of getQualityLevels()">
+            <div class="color-box" [style.background-color]="item.color"></div>
+            <span>{{ item.label }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="legend-info">
+      <div [innerHTML]="getParameterInfo()"></div>
+    </div>
+  </div>
+</div> 

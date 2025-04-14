@@ -1,59 +1,109 @@
-# AirQualityFrontend
+# Air Quality Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+A modern web application built with Angular that visualizes air quality data across different cities using interactive maps. The application provides real-time air quality monitoring with an intuitive user interface and dynamic data visualization.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- 🗺️ Interactive map interface using Leaflet
+- 📊 Real-time air quality data visualization
+- 🎨 Dynamic styling based on air quality parameters
+- 📱 Responsive design for both desktop and mobile devices
+- 🔄 Real-time data updates
+- 🎯 Parameter-specific visualization (PM2.5, Temperature, Humidity)
+- 🏷️ City labels with zoom-dependent visibility
+- 💡 Interactive tooltips with detailed information
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+- Angular CLI (v19.2.0 or higher)
+
+## Installation
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone [repository-url]
+cd air-quality-frontend
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Install dependencies:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Start the development server:
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+The application will be available at `http://localhost:4200/`
 
-To build the project run:
+## Project Structure
 
-```bash
-ng build
+```
+src/
+├── app/
+│   ├── air-quality/           # Air quality feature module
+│   │   ├── components/        # Air quality related components
+│   │   └── services/         # Data and styling services
+│   ├── core/                 # Core module with models
+│   └── shared/              # Shared components and utilities
+├── assets/                  # Static assets
+└── environments/           # Environment configurations
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Available Scripts
 
-## Running unit tests
+- `npm start` - Starts the development server
+- `npm run build` - Builds the application for production
+- `npm test` - Runs unit tests
+- `npm run watch` - Builds and watches for changes
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Dependencies
 
-```bash
-ng test
-```
+- Angular (v19.2.0)
+- Leaflet for map visualization
+- @turf/turf for geospatial calculations
+- Angular Material for UI components
+- RxJS for reactive programming
 
-## Running end-to-end tests
+## Features in Detail
 
-For end-to-end (e2e) testing, run:
+### Map Visualization
+- Interactive map powered by Leaflet
+- City boundaries displayed as polygons
+- Color-coded regions based on air quality parameters
+- Dynamic city labels that appear at appropriate zoom levels
 
-```bash
-ng e2e
-```
+### Air Quality Parameters
+- PM2.5 measurements
+- Temperature readings
+- Humidity levels
+- Real-time data updates
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### User Interface
+- Parameter selector for different measurements
+- Map legend showing quality levels
+- Interactive tooltips with detailed information
+- Responsive design for all screen sizes
 
-## Additional Resources
+## Contributing
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with Angular
+- Map visualization powered by Leaflet
+- Geospatial calculations using Turf.js
+- UI components from Angular Material

@@ -1,0 +1,19 @@
+<div class="map-container">
+  <app-parameter-selector
+    (parameterChange)="updateParameter($event)">
+  </app-parameter-selector>
+  
+  <div class="map"
+       leaflet
+       [leafletOptions]="mapOptions"
+       [leafletLayers]="layers"
+       (leafletMapReady)="onMapReady($event)">
+  </div>
+  
+  <app-map-legend [parameter]="selectedParameter()"></app-map-legend>
+  
+  <app-loading-overlay 
+    [isLoading]="isLoading()" 
+    message="Harita verisi yükleniyor...">
+  </app-loading-overlay>
+</div> 
